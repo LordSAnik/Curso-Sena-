@@ -13,47 +13,50 @@
 </head>
 <body>
    <header>
-       <div class="container">
-            <nav class="menu">
-			    <div class="container">
-				    <div class="row">
-					    <ul class="col-md-12">
-						    <li><a href="#">Inicio</a></li>
-						    <li><a href="#">Acerca de mi</a></li>
-						    <li><a href="#">Portafolio</a></li>
-						    <li><a href="#">Contactos</a></li>
-					    </ul>
-				    </div>
-			    </div>
-		    </nav>
-            <div class="row">
-                <div class="encabezado col-12 col-sm-6">
-                    <h2>EDUARDO GAONA H</h2>
-                </div>
-            </div>  
-       </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light my-2">
+        <div class="container">
+            <a href="#" class="navbar-brand col-6">HOJA DE VIDA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-expanded="false" aria-label="Alter Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse col-6 " id="menuNavegacion">
+                <ul class="navbar-nav mr-auto justify-content-right ">
+                    <il class="nav-item">
+                        <a href="#" class="nav-link ">Inicio</a>
+                    </il>
+                    <il class="nav-item">
+                        <a href="#" class="nav-link">Acerca de </a>
+                    </il>
+                    <il class="nav-item">
+                        <a href="#" class="nav-link ">Portafolio</a>
+                    </il>
+                    <il class="nav-item">
+                        <a href="#" class="nav-link ">Contactos</a>
+                    </il>
+                </ul>
+            </div>
+        </div>
+    </nav>        
    </header>
    <div class="container">
        <div class="row">
-            <section class="main col-md-12">
-                <section class="presentacion">
-                    <div class="texto">
-                        <h1>Eduardo Gaona H</h1>
-                        <h3>Psicólogo </h3>
+            <section class="main col-md-12 col-sm-12">
+                <section class="row my-5 presentacion ">
+                    <div class="col-md-6 col-sm-12 d-flex flex-column  justify-content-end">
+                        <div><h1 class="nombre float-rigth">Eduardo Gaona H</h1></div>
+                        <div><h3 class="profesion">Psicólogo </h3></div>
                     </div>
-                    <div class="subtitulo">
-                        <h2>Acerca de mi</h2>
-                    </div>
-                    <div class="row mifoto">
-                        <div class="thumb">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="mifoto thumb float-right">
                             <img src="img/edg.jpg" width="150" alt="">
                         </div>
                     </div>
                 </section>
-                <section class="acerca_de col-md-12">                  
-                    
-                 
-                    <div class="texto">
+                <section class="row acerca_de col-md-12 my-2">                  
+                    <div class="subtitulo">
+                        <h2>Acerca de mi</h2>
+                    </div>
+                    <div class="texto text-justify ">
                         <p class="acerca_de_mi">Psicólogo egresado de la universidad San Buenaventura de Bogotá. Con el
                         conocimiento y el compromiso ético que implica la aplicación de las ciencias humanas.
                         Con habilidades para trabajar en equipo, resolución de conflictos, planeación y
@@ -65,45 +68,49 @@
                         </p>
                     </div>
                 </section>
-                <section class="formacion_academica col-6">
-                    <div class="texto">
+                <section class="row formacion_academica_exp_laboral col-12  ">
+                    <div class="texto col-md-6 col-sm-12">
                         <h3>Formacion Académica</h3>
                         <ul>
                             <li>Pregrado  Psicología en la  Universidad San Buenaventura Bogotá,  fecha de finalización del programa 2016.   </li>
                             <li>5 Semestres de pregrado de  Diseño Industrial en  Pontificia Universidad Javeriana, fecha de finalización del programa  2010.  </li>
                             <li>Curso Diplomado de  Gestión Humana en  Corporación de Educación Tecnológica Colsubsidio 50 horas, Fecha de finalización 2017. </li>
-                        </ul>
-                        
+                        </ul>   
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <h3>Experiencia Laboral</h3>                    
+                        <ol>
+                            <li>Universidad San Buenaventura (Proyecto ARCOS) Practicante de psicología / Febrero 2015- Junio 2016</li>
+                            <li>Prever Consultores Colombia Psicólogo Freelance / abril del 2017 </li>
+                        </ol>
                     </div>
                 </section>
-                <section class="experiencia col-6">
-                    <h3>Experiencia Laboral</h3>                    
-                    <ol>
-                        <li>Universidad San Buenaventura (Proyecto ARCOS) Practicante de psicología / Febrero 2015- Junio 2016</li>
-                        <li>Prever Consultores Colombia Psicólogo Freelance / abril del 2017 </li>
-                    </ol>
+                <section class="row servicios my-3">
+                     <div class="col-md12 col-sm-12 my-5">
+                         <h2 class="text-center">Servicios</h2>
+                     </div>
+                    <article class="col-md-4 d-flex flex-column ">
+                                <img src="img/7.jpg" alt=""  class="rounded-circle foto_servicios" width="100" height="100">
+                                <h3 class="titulo_servicios">Lorem, ipsum.</h3>
+                                <p class="texto_servicios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque provident cupiditate! Accusantium, doloremque provident!</p>
+                    </article>
+                    <article class="col-md-4 d-flex flex-column">
+                        <img src="img/8.jpg" alt="" class="rounded-circle foto_servicios" width="100" height="100">
+                        <h3 class="titulo_servicios">Lorem, ipsum.</h3>
+                        <p class="texto_servicios">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis voluptatum nihil sequi eveniet error.</p>
+                    </article>
+                    <article class="col-md-4 d-flex flex-column">
+                        <img src="img/9.jpg" alt="" class="rounded-circle foto_servicios" width="100" height="100">
+                        <h3 class="titulo_servicios">Lorem, ipsum.</h3>
+                        <p class="texto_servicios">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis voluptatum nihil sequi eveniet error.</p>
+                    </article>
+                </section>
+                <section class="row portafolio">
                     
+                        
+                    
+                    <h2 class="text-center col-md-12 col-sm-12 border-bottom ">Portafolio</h2>
                    
-                </section>
-                <section class="servicios">
-                    <article class="col-md-4">
-                        <img src="img/7.jpg" alt=""  class="rounded-circle" width="100" height="100">
-                        <h3>Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque provident cupiditate! Accusantium, doloremque provident!</p>
-                    </article>
-                    <article class="col-md-4">
-                        <img src="img/8.jpg" alt="" class="rounded-circle" width="100" height="100">
-                        <h3>Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis voluptatum nihil sequi eveniet error.</p>
-                    </article>
-                    <article class="col-md-4">
-                        <img src="img/9.jpg" alt="" class="rounded-circle" width="100" height="100">
-                        <h3>Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis voluptatum nihil sequi eveniet error.</p>
-                    </article>
-                </section>
-                <section class="portafolio">
-                    <h3>Portafolio</h3>
                     <div><img src="img/1.jpg" width="100" alt=""></div>                  
                     <div><img src="img/2.jpg" width="100" alt=""></div>
                     <div><img src="img/3.jpg" width="100" alt=""></div>
@@ -148,5 +155,8 @@
             </section>
        </div>
    </div>
+   <script  src="js/jquery-3.4.1.min.js"></script>
+   <script  src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

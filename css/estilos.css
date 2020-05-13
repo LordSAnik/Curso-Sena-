@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    
+    font-size: 16px;
+    font-family: "Open Sans", "Lato";
+  }
+ .container {
+         width: 1000px;
+ }
+
+ .main .servicios .foto_servicios{
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 40px;
+ }
+ .main .servicios .titulo_servicios{
+   text-align: center;
+   margin-bottom: 20px;
+}
+.main .servicios .texto_servicios{
+    text-align: justify;
+ }
+ @media (min-width: 300px) and (max-width: 578px) {
+    .container {
+        max-width: 100%;
+    }
+
+      
+  }
