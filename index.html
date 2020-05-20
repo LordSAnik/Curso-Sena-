@@ -2,9 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no,
-	 initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
@@ -13,7 +11,7 @@
 </head>
 <body>
    <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light my-2">
+    <nav class="navbar navbar-expand-lg navbar-light  ">
         <div class="container">
             <a href="#" class="navbar-brand col-6">HOJA DE VIDA</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-expanded="false" aria-label="Alter Menu">
@@ -21,38 +19,38 @@
             </button>
             <div class="collapse navbar-collapse col-6 " id="menuNavegacion">
                 <ul class="navbar-nav mr-auto justify-content-right ">
-                    <il class="nav-item">
-                        <a href="#" class="nav-link ">Inicio</a>
-                    </il>
-                    <il class="nav-item">
-                        <a href="#s" class="nav-link">Servicios</a>
-                    </il>
-                    <il class="nav-item">
-                        <a href="#portafolio" class="nav-link ">Portafolio</a>
-                    </il>
-                    <il class="nav-item">
-                        <a href="#contacto" class="nav-link ">Contacto</a>
-                    </il>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" >Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="nav-link" href="#s">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portafolio" >Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto" >Contacto</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>        
    </header>
-   <main class="container">
+   <main class="container main">
        <div class="row">
             <section class=" col-md-12 col-sm-12">
-                <section class="row my-5 presentacion ">
-                    <div class="col-md-6 col-sm-12 d-flex flex-column  justify-content-end">
+                <div class="row my-3 presentacion ">
+                    <div class="col-md-6 col-sm-6 d-flex flex-column  justify-content-end">
                         <div><h1 class="nombre float-rigth">Eduardo Gaona H</h1></div>
                         <div><h3 class="profesion">Psicólogo </h3></div>
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <div class="mifoto thumb float-right">
-                            <img src="img/edg.jpg" width="150" alt="">
+                            <img src="img/edg.jpg" alt="Foto de Eduardo Gaona" width="150" >
                         </div>
                     </div>
-                </section>
-                <section class="row acerca_de col-md-12 my-2">                  
+                </div>
+                <section class="row acerca_de col-md-12 my-2 ">                  
                     <div class="subtitulo">
                         <h2>Acerca de mi</h2>
                     </div>
@@ -68,8 +66,8 @@
                         </p>
                     </div>
                 </section>
-                <section class="row formacion_academica_exp_laboral col-12  ">
-                    <div class="texto col-md-6 col-sm-12">
+                <section class="row formacion_academica_exp_laboral  d-flex justify-content-between ">
+                    <div class="texto col-md-4 col-sm-12 mx-5 ">
                         <h3>Formacion Académica</h3>
                         <ul>
                             <li>Pregrado  Psicología en la  Universidad San Buenaventura Bogotá,  fecha de finalización del programa 2016.   </li>
@@ -77,7 +75,7 @@
                             <li>Curso Diplomado de  Gestión Humana en  Corporación de Educación Tecnológica Colsubsidio 50 horas, Fecha de finalización 2017. </li>
                         </ul>   
                     </div>
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-4 col-sm-12 mx-5">
                         <h3>Experiencia Laboral</h3>                    
                         <ol>
                             <li>Universidad San Buenaventura (Proyecto ARCOS) Practicante de psicología / Febrero 2015- Junio 2016</li>
@@ -87,100 +85,101 @@
                 </section>
                 <section class="row servicios my-3">
                      <div class="col-md12 col-sm-12 my-5">
-                         <h2 class="text-center"><a name="s">Servicios</a></h2>
+                         <h2 class="text-center"><a id="s">Servicios</a></h2>
                      </div>
                     <article class="col-md-4 d-flex flex-column ">
-                                <img src="img/7.jpg" alt=""  class="rounded-circle foto_servicios" width="100" height="100">
+                                <img src="img/7.jpg" alt="Foto del prinmer servicio"  class="rounded-circle foto_servicios" width="100" height="100">
                                 <h3 class="titulo_servicios">Servicio 1.</h3>
                                 <p class="texto_servicios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque provident cupiditate! Accusantium, doloremque provident!</p>
                     </article>
                     <article class="col-md-4 d-flex flex-column">
-                        <img src="img/8.jpg" alt="" class="rounded-circle foto_servicios" width="100" height="100">
+                        <img src="img/8.jpg" alt="Foto del segundo servicio" class="rounded-circle foto_servicios" width="100" height="100">
                         <h3 class="titulo_servicios">Servicio 2.</h3>
                         <p class="texto_servicios">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis voluptatum nihil sequi eveniet error.</p>
                     </article>
                     <article class="col-md-4 d-flex flex-column">
-                        <img src="img/9.jpg" alt="" class="rounded-circle foto_servicios" width="100" height="100">
+                        <img src="img/9.jpg" alt="Foto del tercer servicio" class="rounded-circle foto_servicios" width="100" height="100">
                         <h3 class="titulo_servicios">Servicio 3.</h3>
                         <p class="texto_servicios">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis voluptatum nihil sequi eveniet error.</p>
                     </article>
                 </section>
                 <section class="row portafolio">               
-                    <h2 class="text-center col-md-12 col-sm-12 border-bottom "><a name="portafolio">Portafolio</a></h2>
+                    <h2 class="text-center col-md-12 col-sm-12 border-bottom "><a id="portafolio">Portafolio</a></h2>
                     <div class="card-column d-flex flex-wrap" id="galeria">
                         <div class="col-4 my-2">
                             <div class="card" >
                                 <a href="#" data-toggle="modal"  data-target="#galeria-modal">
-                                    <img src="img/1.jpg" class="card-img-top" alt="...">
+                                    <img src="img/1.jpg" class="card-img-top" alt="producto uno y su descripcion">
                                 </a>
                             </div>
                             <div class="modal fade" id="galeria-modal" tabindex="-1" role="dialog" aria-labelledby="galeria-modal" aria-hidden="true">
                                 <div class="modal-dialog">
-                                    <img src="img/1.jpg" alt="" class="img-fluid rounded">
+                                    <img src="img/1.jpg" alt="producto uno y su descripcion" class="img-fluid rounded">
                                 </div>
                             </div>
                         </div>
                         <div class="col-4 my-2">
                             <div class="card" >
                                 <a href="#" data-toggle="modal"  data-target="#galeria-modal2">
-                                    <img src="img/2.jpg" class="card-img-top" alt="...">
+                                    <img src="img/2.jpg" class="card-img-top" alt="producto dos y su descripcion">
                                 </a>
                             </div>
                             <div class="modal fade" id="galeria-modal2" tabindex="-1" role="dialog" aria-labelledby="galeria-modal2" aria-hidden="true">
                                 <div class="modal-dialog">
-                                    <img src="img/2.jpg" alt="" class="img-fluid rounded">
+                                    <img src="img/2.jpg" alt="producto dos y su descripcion" class="img-fluid rounded">
                                 </div>
                             </div>
                         </div>
                         <div class="col-4 my-2">
                             <div class="card" >
                                 <a href="#" data-toggle="modal"  data-target="#galeria-modal3">
-                                    <img src="img/3.jpg" class="card-img-top" alt="...">
+                                    <img src="img/3.jpg" class="card-img-top" alt="producto tres y su descripcion">
                                 </a>
                             </div>
                             <div class="modal fade" id="galeria-modal3" tabindex="-1" role="dialog" aria-labelledby="galeria-modal3" aria-hidden="true">
                                 <div class="modal-dialog">
-                                    <img src="img/3.jpg" alt="" class="img-fluid rounded">
+                                    <img src="img/3.jpg" alt="producto tres y su descripcion" class="img-fluid rounded">
                                 </div>
                             </div>
                         </div>
                         <div class="col-4 my-2">
                             <div class="card" >
                                 <a href="#" data-toggle="modal"  data-target="#galeria-modal4">
-                                    <img src="img/4.jpg" class="card-img-top" alt="...">
+                                    <img src="img/4.jpg" class="card-img-top" alt="producto cuatro y su descripcion">
                                 </a>
                             </div>
                             <div class="modal fade" id="galeria-modal4" tabindex="-1" role="dialog" aria-labelledby="galeria-modal" aria-hidden="true">
                                 <div class="modal-dialog">
-                                    <img src="img/4.jpg" alt="" class="img-fluid rounded">
+                                    <img src="img/4.jpg" alt="producto 4 y su descripcion" class="img-fluid rounded">
                                 </div>
                             </div>
                         </div>
                         <div class="col-4 my-2">
                             <div class="card" >
                                 <a href="#" data-toggle="modal"  data-target="#galeria-modal5">
-                                    <img src="img/5.jpg" class="card-img-top" alt="...">
+                                    <img src="img/5.jpg" class="card-img-top" alt="producto cinco y su descripcion">
                                 </a>
                             </div>
                             <div class="modal fade" id="galeria-modal5" tabindex="-1" role="dialog" aria-labelledby="galeria-modal5" aria-hidden="true">
                                 <div class="modal-dialog">
-                                    <img src="img/5.jpg" alt="" class="img-fluid rounded">
+                                    <img src="img/5.jpg" alt="producto cinco y su descripcion" class="img-fluid rounded">
                                 </div>
                             </div>
                         </div>
                         <div class="col-4 my-2">
                             <div class="card" >
                                 <a href="#" data-toggle="modal"  data-target="#galeria-modal6">
-                                    <img src="img/6.jpg" class="card-img-top" alt="...">
+                                    <img src="img/6.jpg" class="card-img-top" alt="producto seis y su descripcion">
                                 </a>
                             </div>
                             <div class="modal fade" id="galeria-modal6" tabindex="-1" role="dialog" aria-labelledby="galeria-modal6" aria-hidden="true">
                                 <div class="modal-dialog">
-                                    <img src="img/6.jpg" alt="" class="img-fluid rounded">
+                                    <img src="img/6.jpg" alt="producto seis y su descripcion" class="img-fluid rounded">
                                 </div>
                             </div>
                         </div>
                         <!--<script>
+                            -trate de hacer las cartas con un loop pero no logro que funcione.-
                             var imagenes = [1, 2, 3, 4, 5, 6];
                             var galeria = document.getElementById('galeria')
                             for(imagen of imagenes) {galeria.innerHTML+= '<div class="col-4 my-2"><div class="card" ><a href="#" data-toggle="modal"  data-target="#id${imagen}"><img src="img/${imagen}.jpg" class="card-img-top" alt="..."></a></div><div class="modal fade" id="id${imagen}" tabindex="-1" role="dialog" aria-labelledby="galeria-modal" aria-hidden="true"><div class="modal-dialog"><img src="img/1.jpg" alt="" class="img-fluid rounded"></div></div></div'}
@@ -190,32 +189,35 @@
                 </section>
                 <section class="row contacto">
                     <div class="col">
-                        <h2 class=" my-5"><a name="contacto">Contacto</a></h2>
-                        <form action="" class="formulario" id="formulario" name="formulario">
-                            <div class="form-group col-6">
+                        <h2 class=" my-5" ><a id="contacto">Contacto</a></h2>
+                        <form action="#" class="formulario" id="formulario" name="formulario">
+                            <div class="form-group col-md-6 col-sm-12 mb-2">
                                 <div class="form-group">
-                                    <label for="nombre">Nombre</label>
-                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                                    <label>Nombre</label>
+                                    
+                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" >
                                 </div>  
                               <label for="correo">Correo</label>
                               <input type="email" class="form-control" id="correo" placeholder="name@example.com">
                             </div>
-                            <div class="form-groupv col-6">
+                            <div class="form-groupv col-md-6 col-sm-12">
                               <label for="servicios">Servicios</label>
                               <select class="form-control" id="servicios">
-                                <option value="0"></option>
+                                <option value="0">Escoje uno.</option>
                                 <option value="1">Servicio 1.</option>
                                 <option value="2">Servicio 2.</option>
                                 <option value="3">Servico 3.</option>
                               </select>
                             </div>
-                            <div class="form-group col-6">
+                            <div class="form-group col-md-6 col-sm-12">
                               <label for="mensaje">Mensaje</label>
                               <textarea class="form-control" id="mensaje" rows="3"></textarea>
                             </div>
-                            <ul class="error" id="error">
+                            <div class="col-6">
+                                <ul class="error" id="error">
 						
-                            </ul>	
+                                </ul>
+                            </div>	
                             <button type="submit" class="btn btn-primary col-6 my-5">Enviar</button>
                         </form>
                     </div>
@@ -228,22 +230,22 @@
        </div>
     </main>
     <footer>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light my-2">
+        <nav class="navbar navbar-expand-lg navbar-light  ">
             <div class="container">
-                <div class="collapse navbar-collapse col-6 " id="menuNavegacion">
+                <div class="collapse navbar-collapse col-6 " id="menuNavegacion2">
                     <ul class="navbar-nav mr-auto justify-content-right ">
-                        <il class="nav-item">
+                        <li class="nav-item">
                             <a href="#top" class="nav-link ">Inicio</a>
-                        </il>
-                        <il class="nav-item">
+                        </li>
+                        <li class="nav-item">
                             <a href="#top" class="nav-link">Acerca de </a>
-                        </il>
-                        <il class="nav-item">
+                        </li>
+                        <li class="nav-item">
                             <a href="#s" class="nav-link">Servicios</a>
-                        </il>
-                        <il class="nav-item">
+                        </li>
+                        <li class="nav-item">
                             <a href="#portafolio" class="nav-link ">Portafolio</a>
-                        </il>
+                        </li>
                         
                     </ul>
                 </div>

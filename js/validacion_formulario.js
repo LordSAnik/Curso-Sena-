@@ -53,7 +53,6 @@
 
 		function validarFormulario(e){
 				error.innerHTML = '';
-
 				validarNombre(e);
                 validarCorreo(e);
                 validarServicios(e);
