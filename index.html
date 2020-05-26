@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
@@ -10,20 +10,19 @@
     <title>Hoja de vida</title>
 </head>
 <body>
+    
    <header>
-    <nav class="navbar navbar-expand-lg navbar-light  ">
+    <div class="hidden"><a href="#Eduardo">Saltar Navegacion.</a></div>
+    <nav class="navbar navbar-expand-lg navbar-light" aria-label="menu1">
         <div class="container">
             <a href="#" class="navbar-brand col-6">HOJA DE VIDA</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-expanded="false" aria-label="Alter Menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse col-6 " id="menuNavegacion">
-                <ul class="navbar-nav mr-auto justify-content-right ">
+            <div class="collapse navbar-collapse col-6" id="menuNavegacion">
+                <ul class="navbar-nav mr-auto justify-content-right">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" >Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a  class="nav-link" href="#s">Servicios</a>
+                        <a  class="nav-link" href="#serv">Servicios</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#portafolio" >Portafolio</a>
@@ -38,23 +37,23 @@
    </header>
    <main class="container main">
        <div class="row">
-            <section class=" col-md-12 col-sm-12">
-                <div class="row my-3 presentacion ">
+            <section class="col-md-12 col-sm-12">
+                <div class="row my-3 presentacion">
                     <div class="col-md-6 col-sm-6 d-flex flex-column  justify-content-end">
                         <div><h1 class="nombre float-rigth">Eduardo Gaona H</h1></div>
-                        <div><h3 class="profesion">Psicólogo </h3></div>
+                        <div><h2 class="profesion">Psicólogo </h2></div>
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <div class="mifoto thumb float-right">
-                            <img src="img/edg.jpg" alt="Foto de Eduardo Gaona" width="150" >
+                            <img src="img/edg.jpg" alt="Foto de Eduardo Gaona." width="150" >
                         </div>
                     </div>
                 </div>
-                <section class="row acerca_de col-md-12 my-2 ">                  
+                <section class="row acerca_de col-md-12 my-2">                  
                     <div class="subtitulo">
                         <h2>Acerca de mi</h2>
                     </div>
-                    <div class="texto text-justify ">
+                    <div class="texto text-justify">
                         <p class="acerca_de_mi">Psicólogo egresado de la universidad San Buenaventura de Bogotá. Con el
                         conocimiento y el compromiso ético que implica la aplicación de las ciencias humanas.
                         Con habilidades para trabajar en equipo, resolución de conflictos, planeación y
@@ -66,8 +65,8 @@
                         </p>
                     </div>
                 </section>
-                <section class="row formacion_academica_exp_laboral  d-flex justify-content-between ">
-                    <div class="texto col-md-4 col-sm-12 mx-5 ">
+                <section class="row formacion_academica_exp_laboral  d-flex justify-content-between">
+                    <div class="texto col-md-4 col-sm-12 mx-5">
                         <h3>Formacion Académica</h3>
                         <ul>
                             <li>Pregrado  Psicología en la  Universidad San Buenaventura Bogotá,  fecha de finalización del programa 2016.   </li>
@@ -85,9 +84,9 @@
                 </section>
                 <section class="row servicios my-3">
                      <div class="col-md12 col-sm-12 my-5">
-                         <h2 class="text-center"><a id="s">Servicios</a></h2>
+                         <h2 class="text-center"><a id="serv">Servicios</a></h2>
                      </div>
-                    <article class="col-md-4 d-flex flex-column ">
+                    <article class="col-md-4 d-flex flex-column">
                                 <img src="img/7.jpg" alt="Foto del prinmer servicio"  class="rounded-circle foto_servicios" width="100" height="100">
                                 <h3 class="titulo_servicios">Servicio 1.</h3>
                                 <p class="texto_servicios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque provident cupiditate! Accusantium, doloremque provident!</p>
@@ -104,7 +103,7 @@
                     </article>
                 </section>
                 <section class="row portafolio">               
-                    <h2 class="text-center col-md-12 col-sm-12 border-bottom "><a id="portafolio">Portafolio</a></h2>
+                    <h2 class="text-center col-md-12 col-sm-12 border-bottom"><a id="portafolio">Portafolio</a></h2>
                     <div class="card-column d-flex flex-wrap" id="galeria">
                         <div class="col-4 my-2">
                             <div class="card" >
@@ -178,23 +177,16 @@
                                 </div>
                             </div>
                         </div>
-                        <!--<script>
-                            -trate de hacer las cartas con un loop pero no logro que funcione.-
-                            var imagenes = [1, 2, 3, 4, 5, 6];
-                            var galeria = document.getElementById('galeria')
-                            for(imagen of imagenes) {galeria.innerHTML+= '<div class="col-4 my-2"><div class="card" ><a href="#" data-toggle="modal"  data-target="#id${imagen}"><img src="img/${imagen}.jpg" class="card-img-top" alt="..."></a></div><div class="modal fade" id="id${imagen}" tabindex="-1" role="dialog" aria-labelledby="galeria-modal" aria-hidden="true"><div class="modal-dialog"><img src="img/1.jpg" alt="" class="img-fluid rounded"></div></div></div'}
-                        </script>-->
-                       
+                        
                     </div>
                 </section>
                 <section class="row contacto">
                     <div class="col">
-                        <h2 class=" my-5" ><a id="contacto">Contacto</a></h2>
+                        <h2 class="my-5" ><a id="contacto">Contacto</a></h2>
                         <form action="#" class="formulario" id="formulario" name="formulario">
                             <div class="form-group col-md-6 col-sm-12 mb-2">
                                 <div class="form-group">
-                                    <label>Nombre</label>
-                                    
+                                    <label for="nombre" >Nombre</label>
                                     <input type="text" class="form-control" id="nombre" placeholder="Nombre" >
                                 </div>  
                               <label for="correo">Correo</label>
@@ -203,7 +195,7 @@
                             <div class="form-groupv col-md-6 col-sm-12">
                               <label for="servicios">Servicios</label>
                               <select class="form-control" id="servicios">
-                                <option value="0">Escoje uno.</option>
+                                <option value="1">Escoje uno.</option>
                                 <option value="1">Servicio 1.</option>
                                 <option value="2">Servicio 2.</option>
                                 <option value="3">Servico 3.</option>
@@ -218,33 +210,30 @@
 						
                                 </ul>
                             </div>	
-                            <button type="submit" class="btn btn-primary col-6 my-5">Enviar</button>
+                            <button type="submit" class="btn btn-dark col-6 my-5">Enviar</button>
                         </form>
                     </div>
                 </section>
-                
-                    
-                
             </section>
 
        </div>
     </main>
     <footer>
-        <nav class="navbar navbar-expand-lg navbar-light  ">
+        <nav class="navbar navbar-expand-lg navbar-light" aria-label="menu 2">
             <div class="container">
-                <div class="collapse navbar-collapse col-6 " id="menuNavegacion2">
-                    <ul class="navbar-nav mr-auto justify-content-right ">
+                <div class="collapse navbar-collapse col-6" id="menuNavegacion2">
+                    <ul class="navbar-nav mr-auto justify-content-right">
                         <li class="nav-item">
-                            <a href="#top" class="nav-link ">Inicio</a>
+                            <a href="#" class="nav-link">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a href="#top" class="nav-link">Acerca de </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#s" class="nav-link">Servicios</a>
+                            <a href="#serv" class="nav-link">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#portafolio" class="nav-link ">Portafolio</a>
+                            <a href="#portafolio" class="nav-link">Portafolio</a>
                         </li>
                         
                     </ul>
@@ -253,9 +242,29 @@
         </nav>    
     </footer>
    <script src="js/validacion_formulario.js"></script>
+    <noscript>
+        <p>Bienvenido a Mi Sitio</p>
+        <p>La página que estás viendo requiere para su funcionamiento el uso de JavaScript.
+            Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.</p>
+    </noscript>
    <script  src="js/jquery-3.5.1.min.js"></script>
+   <noscript>
+    <p>Bienvenido a Mi Sitio</p>
+    <p>La página que estás viendo requiere para su funcionamiento el uso de JavaScript.
+        Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.</p>
+</noscript>
    <script  src="js/popper.min.js"></script>
+   <noscript>
+    <p>Bienvenido a Mi Sitio</p>
+    <p>La página que estás viendo requiere para su funcionamiento el uso de JavaScript.
+        Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.</p>
+</noscript>
    <script src="js/bootstrap.min.js"></script>
+   <noscript>
+    <p>Bienvenido a Mi Sitio</p>
+    <p>La página que estás viendo requiere para su funcionamiento el uso de JavaScript.
+        Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.</p>
+</noscript>
    
 </body>
 </html>

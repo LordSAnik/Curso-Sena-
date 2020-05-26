@@ -3,7 +3,7 @@
     padding: 0;
   }
   body {
-    background-color: #EEEDE8;
+    background-color: #72747F;
     font-size: 16px;
     font-family: "Open Sans", "Lato";
   }
@@ -11,12 +11,22 @@
          width: 1000px;
  }
 .navbar {
-  background-color:#DADADA;
-  
+  background-color:#DADADA; 
 }
+/*nav .navbar-nav li a{
+  color: black !important;
+  }*/
 .presentacion {
   background: white;
   border-color: white;
+}
+.hidden{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;  
 }
 .main {
   background: white;
